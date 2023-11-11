@@ -26,8 +26,156 @@ h1 {
 	color: var(--color-primary);
 }
 
+.cover {
+	text-align: center;
+	padding: 50px;
+}
+
+.intro {
+	text-align: center;
+	padding: 50px;
+}
+
+
+body {
+	font-family: Arial, sans-serif;
+	background-color: #73B4D8;
+}
+
+
+.logo {
+	width: 200px;
+	margin: 20px auto;
+
+}
+
+button {
+	background-color: #7B68EE;
+	color: white;
+	padding: 10px 20px;
+	text-align: center;
+	display: inline-block;
+	margin: 4px 2px;
+	border-radius: 4px;
+}
+
+.profile-container {
+	background-color: #6A5ACD;
+	border-radius: 10px;
+	padding: 20px;
+	width: 250px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	text-align: center;
+	color: white;
+}
+
+.soccer-field {
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.field-image {
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+}
+
+.dot {
+	position: absolute;
+	width: 10%;
+	height: 10%;
+	background-color: black;
+	border-radius: 50%;
+}
+
+.dot-1 {
+	top: 8%;
+	left: 50%;
+}
+
+.dot-2 {
+	top: 25%;
+	left: 15%;
+}
+
+.dot-3 {
+	top: 25%;
+	left: 35%;
+}
+
+.dot-4 {
+	top: 25%;
+	left: 65%;
+}
+
+.dot-5 {
+	top: 25%;
+	left: 85%;
+}
+
+.dot-6 {
+	top: 50%;
+	left: 25%;
+}
+
+.dot-7 {
+	top: 50%;
+	left: 75%;
+}
+
+.dot-8 {
+	top: 60%;
+	left: 50%;
+}
+
+.dot-9 {
+	top: 75%;
+	left: 15%;
+}
+
+.dot-10 {
+	top: 75%;
+	left: 50%;
+}
+
+.dot-11 {
+	top: 75%;
+	left: 85%;
+}
+
+.coach-info {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+.coach-icon {
+	margin-right: 10px;
+}
+
+.player {
+	margin-bottom: 20px;
+}
+
+.player-image {
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+}
+
+.jersey {
+	margin-bottom: 20px;
+}
+
+.jersey-image {
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+}
+
 /* This uses the same value as --size-xs. */
-@media screen and (width >= 320px) {
+@media screen and (width >=320px) {
 	.content-container {
 		margin: 0 auto;
 		max-width: 768px;
