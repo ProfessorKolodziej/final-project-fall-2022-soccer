@@ -88,57 +88,57 @@ button {
 	border-radius: 50%;
 }
 
-.dot-1 {
+.dot1 {
 	top: 8%;
 	left: 50%;
 }
 
-.dot-2 {
+.dot2 {
 	top: 25%;
 	left: 15%;
 }
 
-.dot-3 {
+.dot3 {
 	top: 25%;
 	left: 35%;
 }
 
-.dot-4 {
+.dot4 {
 	top: 25%;
 	left: 65%;
 }
 
-.dot-5 {
+.dot5 {
 	top: 25%;
 	left: 85%;
 }
 
-.dot-6 {
+.dot6 {
 	top: 50%;
 	left: 25%;
 }
 
-.dot-7 {
+.dot7 {
 	top: 50%;
 	left: 75%;
 }
 
-.dot-8 {
+.dot8 {
 	top: 60%;
 	left: 50%;
 }
 
-.dot-9 {
+.dot9 {
 	top: 75%;
 	left: 15%;
 }
 
-.dot-10 {
+.dot10 {
 	top: 75%;
 	left: 50%;
 }
 
-.dot-11 {
+.dot11 {
 	top: 75%;
 	left: 85%;
 }
@@ -159,7 +159,7 @@ button {
 }
 
 .player-image {
-	width: 100%;
+	max-width: 50%;
 	height: auto;
 	border-radius: 10px;
 }
@@ -169,7 +169,7 @@ button {
 }
 
 .jersey-image {
-	width: 100%;
+	max-width: 50%;
 	height: auto;
 	border-radius: 10px;
 }
