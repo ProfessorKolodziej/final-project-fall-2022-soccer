@@ -103,6 +103,7 @@ body {
 }
 
 .about-container {
+	display: block;
 	font-family: Manuale;
 	text-align: center;
 	margin: 20px;
@@ -120,6 +121,7 @@ body {
 
 .about-logo {
 	width: 200px;
+	margin: 0 auto;
 	height: auto;
 	margin: auto;
 }
@@ -129,9 +131,16 @@ body {
 	margin-top: 20px;
 }
 
+h1 {
+	color: #000000;
+	font-size: 3em;
+
+}
+
 h2 {
 	color: #333;
 	margin-top: 20px;
+	font-size: 2em;
 }
 
 p {
@@ -155,11 +164,6 @@ p {
 	border-radius: 5px;
 }
 
-.container {
-	text-align: center;
-	max-width: 1200px;
-	margin: 0 auto;
-}
 
 h1 {
 	font-size: 4em;
@@ -171,7 +175,7 @@ h1 {
 	position: relative;
 	width: 100%;
 	padding-bottom: 50%;
-	margin: 20px 0 0;
+	margin: 0 auto;
 }
 
 .dot1 {
@@ -179,7 +183,7 @@ h1 {
 	bottom: 35%;
 	left: 50%;
 	transform: translateX(-50%);
-	width: 5%;
+	width: 10%;
 	height: auto;
 }
 
@@ -188,7 +192,7 @@ h1 {
 .dot4,
 .dot5 {
 	position: absolute;
-	width: 5%;
+	width: 10%;
 	height: auto;
 }
 
@@ -215,7 +219,7 @@ h1 {
 .dot6,
 .dot7 {
 	position: absolute;
-	width: 5%;
+	width: 10%;
 	height: auto;
 }
 
@@ -233,7 +237,7 @@ h1 {
 .dot9,
 .dot10 {
 	position: absolute;
-	width: 5%;
+	width: 10%;
 	height: auto;
 }
 
@@ -258,7 +262,7 @@ h1 {
 	bottom: 90%;
 	left: 50%;
 	transform: translateX(-50%);
-	width: 5%;
+	width: 10%;
 	height: auto;
 }
 
@@ -303,7 +307,60 @@ img {
 
 .coach-container {
 	text-align: center;
+	margin-top: 40px;
 }
+
+.striker-container {
+	text-align: center;
+	align-items: center;
+}
+
+.player-card {
+	display: block;
+	background-color: #70BEEA;
+	text-align: center;
+	align-items: center;
+	border-radius: 10px;
+	width: 300px;
+	padding: 20px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	position: relative;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.player-number {
+	position: absolute;
+	font-family: Manuale;
+	top: -5px;
+	right: -5px;
+	color: #000000;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 30px;
+	font-weight: 1000;
+}
+
+.player-name {
+	color: #333;
+	font-size: 24px;
+}
+
+
+.player-footer {
+	background-color: #a200ff;
+	color: #fff;
+	padding: 10px;
+	margin-top: 20px;
+	border-radius: 10px 10px 10px 10px;
+	font-size: 18px;
+}
+
+
 
 @media (min-width: 1200px) {
 	.navbar {
@@ -335,4 +392,5 @@ img {
 	.cover-title {
 		top: 10%;
 	}
+
 }
