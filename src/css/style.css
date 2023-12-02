@@ -22,162 +22,317 @@ to help you out.
 	--size-xl: 1200px;
 */
 
-h1 {
-	color: var(--color-primary);
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-.cover {
-	text-align: center;
-	padding: 50px;
+.cover-page {
+	width: 100%;
+	height: 100%;
 }
 
-.intro {
-	text-align: center;
-	padding: 50px;
+.navbar {
+	background-color: #3f6c97;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
 }
 
-
-body {
-	font-family: Arial, sans-serif;
-	background-color: #73B4D8;
+.navbar ul {
+	list-style-type: none;
+	text-align: left;
 }
 
-
-.logo {
-	width: 200px;
-	margin: 20px auto;
-
+.navbar li {
+	display: inline;
 }
 
-button {
-	background-color: #7B68EE;
-	color: white;
-	padding: 10px 20px;
-	text-align: center;
+.navbar a {
 	display: inline-block;
-	margin: 4px 2px;
-	border-radius: 4px;
-}
-
-.profile-container {
-	background-color: #6A5ACD;
-	border-radius: 10px;
-	padding: 20px;
-	width: 250px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-	text-align: center;
 	color: white;
+	text-align: center;
+	padding: 14px 16px;
 }
 
-.soccer-field {
+
+.cover-container {
 	position: relative;
-	margin-bottom: 20px;
+	width: 100%;
+	height: 100%;
 }
 
-.field-image {
+.cover-image {
+	width: 120%;
+	height: 100%;
+	opacity: 0.9;
+}
+
+.logo-container {
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 200px;
+	height: auto;
+}
+
+.club-logo {
 	width: 100%;
 	height: auto;
-	border-radius: 10px;
 }
 
-.dot {
+.cover-title {
 	position: absolute;
-	width: 10%;
-	height: 10%;
-	background-color: black;
-	border-radius: 50%;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family: Manuale;
+	font-size: 3em;
+	font-weight: 700;
+	color: #111;
+}
+
+body {
+	background-color: #C0D4E7;
+	width: 100%;
+	height: 100%;
+}
+
+.about-container {
+	font-family: Manuale;
+	text-align: center;
+	margin: 20px;
+	padding: 20px;
+	max-width: 1500px;
+	max-height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #C0D4E7;
+}
+
+.about-text {
+	font-family: Kaisei Decol;
+}
+
+.about-logo {
+	width: 200px;
+	height: auto;
+	margin: auto;
+}
+
+.about-title {
+	text-align: center;
+	margin-top: 20px;
+}
+
+h2 {
+	color: #333;
+	margin-top: 20px;
+}
+
+p {
+	color: #555;
+	font-size: 1em;
+	font-family: Kaisei Decol;
+	line-height: 1.6;
+	margin-top: 10px;
+	font-family: Kaisei Decol;
+}
+
+.back-button {
+	display: inline-block;
+	padding: 10px 20px;
+	margin-top: 20px;
+	background-color: #9747FF;
+	color: white;
+	text-decoration: none;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.container {
+	text-align: center;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 4em;
+	margin: 20px 0;
+	font-family: Manuale;
+}
+
+.field {
+	position: relative;
+	width: 100%;
+	padding-bottom: 50%;
+	margin: 20px 0 0;
 }
 
 .dot1 {
-	top: 8%;
+	position: absolute;
+	bottom: 35%;
 	left: 50%;
+	transform: translateX(-50%);
+	width: 5%;
+	height: auto;
+}
+
+.dot2,
+.dot3,
+.dot4,
+.dot5 {
+	position: absolute;
+	width: 5%;
+	height: auto;
 }
 
 .dot2 {
-	top: 25%;
 	left: 15%;
+	bottom: 50%
 }
 
 .dot3 {
-	top: 25%;
 	left: 35%;
+	bottom: 50%;
 }
 
 .dot4 {
-	top: 25%;
-	left: 65%;
+	right: 35%;
+	bottom: 50%;
 }
 
 .dot5 {
-	top: 25%;
-	left: 85%;
+	right: 15%;
+	bottom: 50%;
+}
+
+.dot6,
+.dot7 {
+	position: absolute;
+	width: 5%;
+	height: auto;
 }
 
 .dot6 {
-	top: 50%;
-	left: 25%;
+	left: 30%;
+	bottom: 65%;
 }
 
 .dot7 {
-	top: 50%;
-	left: 75%;
+	right: 30%;
+	bottom: 65%;
+}
+
+.dot8,
+.dot9,
+.dot10 {
+	position: absolute;
+	width: 5%;
+	height: auto;
 }
 
 .dot8 {
-	top: 60%;
-	left: 50%;
+	left: 20%;
+	bottom: 80%;
 }
 
 .dot9 {
-	top: 75%;
-	left: 15%;
+	left: 50%;
+	bottom: 75%;
+	transform: translateX(-50%);
 }
 
 .dot10 {
-	top: 75%;
-	left: 50%;
+	right: 20%;
+	bottom: 80%;
 }
 
 .dot11 {
-	top: 75%;
-	left: 85%;
+	position: absolute;
+	bottom: 90%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 5%;
+	height: auto;
 }
+
+.pitch {
+	width: 100%;
+	height: auto;
+}
+
+img {
+	width: auto;
+	height: auto;
+}
+
 
 .coach-info {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin-bottom: 20px;
+	font-size: 2em;
+	font-family: Kaisei Decol;
+	text-decoration: underline;
+	color: #000000;
+	margin-top: -20px;
+	display: inline-block;
 }
 
-.coach-icon {
-	margin-right: 10px;
+.tactic-info {
+	font-size: 2em;
+	font-family: Kaisei Decol;
+	margin-bottom: 10px;
 }
 
-.player {
-	margin-bottom: 20px;
-}
-
-.player-image {
-	max-width: 50%;
-	height: auto;
+.profile-container {
+	text-align: center;
+	max-width: 300px;
+	margin: 20px auto;
 	border-radius: 10px;
+	padding: 20px;
 }
 
-.jersey {
-	margin-bottom: 20px;
-}
-
-.jersey-image {
-	max-width: 50%;
+.coach-image {
+	max-width: 100%;
 	height: auto;
-	border-radius: 10px;
 }
 
-/* This uses the same value as --size-xs. */
-@media screen and (width >=320px) {
-	.content-container {
+.coach-container {
+	text-align: center;
+}
+
+@media (min-width: 1200px) {
+	.navbar {
+
+		width: 100%;
+		padding: 0 20px;
+	}
+
+	.navbar ul {
+		text-align: center;
+		max-width: 1200px;
 		margin: 0 auto;
-		max-width: 768px;
+		padding: 0 40px;
+	}
+
+	.navbar li {
+		padding: 0 15px;
+	}
+
+	.navbar a {
+		font-size: 1.2em;
+		padding: 20px 30px;
+	}
+
+	.logo-container {
+		top: 30%;
+	}
+
+	.cover-title {
+		top: 10%;
 	}
 }
