@@ -1,0 +1,479 @@
+/*
+CSS controls the styling of the page.
+You can write a color in directly, or use variables.
+Try changing the color from blue to red in the
+primary color variable below.
+*/
+
+:root {
+	--color-primary: blue;
+	--color-secondary: #c00;
+}
+
+/*
+CSS doesn't allow variables to be used in media
+queries just yet, but you can use these values
+to help you out.
+
+	--size-xs: 320px;
+	--size-sm: 480px;
+	--size-md: 768px;
+	--size-lg: 1024px;
+	--size-xl: 1200px;
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.cover-page {
+	width: 100%;
+	height: 100%;
+}
+
+.navbar {
+	background-color: #3f6c97;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+}
+
+.navbar ul {
+	list-style-type: none;
+	text-align: left;
+}
+
+.navbar li {
+	display: inline;
+}
+
+.navbar a {
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+}
+
+
+.cover-container {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.cover-image {
+	width: 120%;
+	height: 100%;
+	opacity: 0.9;
+}
+
+.logo-container {
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 200px;
+	height: auto;
+}
+
+.club-logo {
+	width: 100%;
+	height: auto;
+}
+
+.cover-title {
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family: Manuale;
+	font-size: 3em;
+	font-weight: 700;
+	color: #111;
+}
+
+body {
+	background-color: rgb(131, 176, 219);
+	width: 100%;
+	height: 100%;
+}
+
+.about-container {
+	display: block;
+	font-family: Manuale;
+	text-align: center;
+	margin: 20px;
+	padding: 20px;
+	max-width: 1500px;
+	max-height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgb(131, 176, 219);
+}
+
+.about-text {
+	font-family: Kaisei Decol;
+}
+
+.about-logo {
+	width: 200px;
+	margin: 0 auto;
+	height: auto;
+	margin: auto;
+}
+
+.about-title {
+	text-align: center;
+	margin-top: 20px;
+}
+
+h1 {
+	color: #000000;
+	font-size: 3em;
+
+}
+
+h2 {
+	color: #333;
+	margin-top: 20px;
+	font-size: 2em;
+}
+
+p {
+	color: #555;
+	font-size: 1em;
+	font-family: Kaisei Decol;
+	line-height: 1.6;
+	margin-top: 10px;
+	font-family: Kaisei Decol;
+}
+
+.back-button {
+	display: inline-block;
+	padding: 10px 20px;
+	margin-top: 20px;
+	background-color: #9747FF;
+	color: white;
+	text-decoration: none;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+
+h1 {
+	font-size: 4em;
+	margin: 20px 0;
+	font-family: Manuale;
+}
+
+.field {
+	position: relative;
+	width: 100%;
+	padding-bottom: 50%;
+	margin: 0 auto;
+}
+
+.dot1 {
+	position: absolute;
+	bottom: 35%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 10%;
+	height: auto;
+}
+
+.dot2,
+.dot3,
+.dot4,
+.dot5 {
+	position: absolute;
+	width: 10%;
+	height: auto;
+}
+
+.dot2 {
+	left: 15%;
+	bottom: 50%
+}
+
+.dot3 {
+	left: 35%;
+	bottom: 50%;
+}
+
+.dot4 {
+	right: 35%;
+	bottom: 50%;
+}
+
+.dot5 {
+	right: 15%;
+	bottom: 50%;
+}
+
+.dot6,
+.dot7 {
+	position: absolute;
+	width: 10%;
+	height: auto;
+}
+
+.dot6 {
+	left: 30%;
+	bottom: 65%;
+}
+
+.dot7 {
+	right: 30%;
+	bottom: 65%;
+}
+
+.dot8,
+.dot9,
+.dot10 {
+	position: absolute;
+	width: 10%;
+	height: auto;
+}
+
+.dot8 {
+	left: 20%;
+	bottom: 80%;
+}
+
+.dot9 {
+	left: 50%;
+	bottom: 75%;
+	transform: translateX(-50%);
+}
+
+.dot10 {
+	right: 20%;
+	bottom: 80%;
+}
+
+.dot11 {
+	position: absolute;
+	bottom: 90%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 10%;
+	height: auto;
+}
+
+.pitch {
+	width: 100%;
+	height: auto;
+}
+
+img {
+	width: auto;
+	height: auto;
+}
+
+
+.coach-info {
+	font-size: 2em;
+	font-family: Kaisei Decol;
+	text-decoration: underline;
+	color: #000000;
+	margin-top: -20px;
+	display: inline-block;
+}
+
+.tactic-info {
+	font-size: 2em;
+	font-family: Kaisei Decol;
+	margin-bottom: 10px;
+}
+
+.profile-container {
+	text-align: center;
+	max-width: 300px;
+	margin: 20px auto;
+	border-radius: 10px;
+	padding: 20px;
+}
+
+.coach-image {
+	max-width: 100%;
+	height: auto;
+}
+
+.coach-container {
+	text-align: center;
+	margin-top: 40px;
+}
+
+.striker-container {
+	text-align: center;
+	align-items: center;
+}
+
+.am-container {
+	text-align: center;
+	align-items: center;
+}
+
+.mid-container {
+	text-align: center;
+	align-items: center;
+}
+
+.side-container {
+	text-align: center;
+	align-items: center;
+}
+
+.defender-container {
+	text-align: center;
+	align-items: center;
+}
+
+.gk-container {
+	text-align: center;
+	align-items: center;
+}
+
+.player-card {
+	display: block;
+	background-color: #70BEEA;
+	text-align: center;
+	align-items: center;
+	border-radius: 10px;
+	width: 300px;
+	padding: 20px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	position: relative;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.player-number {
+	position: absolute;
+	font-family: Manuale;
+	top: -5px;
+	right: -5px;
+	color: #000000;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 30px;
+	font-weight: 1000;
+}
+
+.player-name {
+	color: #333;
+	font-size: 24px;
+}
+
+
+.player-footer {
+	background-color: #a200ff;
+	color: #fff;
+	padding: 10px;
+	margin-top: 20px;
+	border-radius: 10px 10px 10px 10px;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 100;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	justify-content: center;
+	align-items: center;
+}
+
+.modal-content {
+	background-color: #70BEEA;
+	margin: 15% auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
+	max-width: 500px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+}
+
+.jerseytitle {
+	text-align: center;
+}
+
+.jerseys {
+	display: block;
+	justify-content: center;
+	align-items: center;
+	gap: 50px;
+}
+
+.jersey-container {
+	text-align: center;
+}
+
+.jersey {
+	max-width: 100%;
+	height: auto;
+}
+
+.gallery {
+	text-align: center;
+}
+
+.photo {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.gallery-photo {
+	max-width: 250px;
+
+}
+
+@media (min-width: 1200px) {
+	.navbar {
+
+		width: 100%;
+		padding: 0 20px;
+	}
+
+	.navbar ul {
+		text-align: center;
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 40px;
+	}
+
+	.navbar li {
+		padding: 0 15px;
+	}
+
+	.navbar a {
+		font-size: 1.2em;
+		padding: 20px 30px;
+	}
+
+	.logo-container {
+		top: 30%;
+	}
+
+	.cover-title {
+		top: 10%;
+	}
+
+}
